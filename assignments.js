@@ -1,51 +1,5 @@
 //?     ASSIGNMENTS **********************
 
-//! 1)  *****
-const prices3 = [100, 250, 50, 89];
-
-let newPrices3 = 0;
-prices3.forEach((p, i, dizi) => {
-    newPrices3 = (p * 1.1).toFixed(2);
-
-    console.log(`${i + 1}. new price ${newPrices3} `);
-    dizi[i] = (p * 1.1).toFixed(2);
-
-});
-console.log(prices3);
-
-
-
-//! 2)  *****
-
-const prices4 = [100, 250, 50, 89];
-
-
-prices4.forEach((p, i, dizi) => {
-    if (p > 90)
-        console.log(`${i + 1} ${p} `);
-    dizi[i] = p
-
-})
-
-
-//! 3) *****
-
-const prices5 = [100, 250, 50, 89];
-
-
-prices5.forEach((p, i, dizi) => {
-    if (p < 110)
-        console.log(` ${(p * 1.1).toFixed(2)} `);
-    dizi[i] = (p * 1.1).toFixed(2)
-
-})
-
-
-
-
-
-
-
 
 
 // !ÖDEVLER 1 *********
@@ -121,3 +75,76 @@ const oddEven = function (number) {
     return number % 2 == 0 ? "Even" : "Odd"
 }
 console.log(oddEven(number))
+
+
+
+
+
+//! 1)  *****
+const prices3 = [100, 250, 50, 89];
+
+let newPrices3 = 0;
+prices3.forEach((p, i, dizi) => {
+    newPrices3 = (p * 1.1).toFixed(2);
+
+    console.log(`${i + 1}. new price ${newPrices3} `);
+    dizi[i] = (p * 1.1).toFixed(2);
+
+});
+console.log(prices3);
+
+
+
+//! 2)  *****
+
+const prices4 = [100, 250, 50, 89];
+
+
+prices4.forEach((p, i, dizi) => {
+    if (p > 90)
+        console.log(`${i + 1} ${p} `);
+    dizi[i] = p
+
+})
+
+
+//! 3) *****
+
+const prices5 = [100, 250, 50, 89];
+
+
+prices5.forEach((p, i, dizi) => {
+    if (p < 110)
+        console.log(` ${(p * 1.1).toFixed(2)} `);
+    dizi[i] = (p * 1.1).toFixed(2)
+
+})
+
+
+//! 4) *****
+
+const salary = [3000, 5000, 4000, 6000, 6500]
+const newSalary = salary.map((p) => {
+    const newSalary = 0;
+    if (p < 4000)
+        p = p * 1.5
+    return p
+})
+console.log(newSalary);
+
+
+//! 5) *****
+
+const salary1 = [3000, 5000, 4000, 6000, 6500]
+
+const newSalary1 = salary1.map((p) => (p > 4000) ? p * 1.25 : p)
+
+console.log(newSalary1);
+
+
+
+
+
+
+
+
